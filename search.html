@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding: 50px;
+            background-color: #f8f9fa;
+        }
+        .search-bar {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .search-bar input[type="text"] {
+            border-radius: 0;
+        }
+        .search-bar button {
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-bar">
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (Popper and jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>

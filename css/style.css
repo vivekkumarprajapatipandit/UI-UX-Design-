@@ -1,0 +1,51 @@
+.teachers-page {
+    text-align: center;
+}
+
+.teacher-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teacher-summary {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+.teacher-summary img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.teacher-profile {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.teacher-profile img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.teacher-profile h1, .teacher-profile h2 {
+    text-align: center;
+}
+
+.teacher-profile ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.teacher-profile ul li {
+    margin: 5px 0;
+}

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>📘 E-learning website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel= "stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+    
+    <style>
+        .teacher-summary img {
+            width: 100%;
+            height: auto;
+
+        }
+        .active{
+        color:red;}
+
+
+        .teacher-summary {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+        .teacher-summary:hover {
+            transform: scale(1.05);
+        }
+        
+        .try { color:#154360 }
+
+        
+        .searched:hover {
+            color:white;
+        }
+        .searched{
+            color:white;
+        }
+        .train:hover{
+          color:blue;
+          background-color:bisque
+        }
+        .train{
+          color:red;
+
+        }
+        .tengent{
+          cursor: pointer;
+        }
+    </style>
+   
+   
+</head>
+
+    
+
+<body>
+    <div class="container-fluid ">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary 
+">
+            <div class="container-fluid bg-primary text-white">
+              <a class="navbar-brand text-white" href="#">E-learning</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse bg-primary text-white common" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active  text-white" aria-current="page" href="Home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  text-white" href="#">About us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link   text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Semester
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">sem1</a></li>
+                      <li><a class="dropdown-item" href="#">sem2</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">sem3</a></li>
+                      <li><a class="dropdown-item" href="#">sem4</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link   text-white" >Gallery</a>
+                  </li>
+                 </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-info searched  "  type="submit">Search</button>
+                </form>
+              <ul class="navbar-nav  mb-2 ">
+                    <li class="nav-item">
+                      <a class="nav-link active  text-white" aria-current="page" href="login.html">🏛️Login</a>
+                    </li>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active  text-white" aria-current="page" href="register.html">📘Register</a>
+                  </li>
+                </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+
+
+
+    </div>
+    <div class="container">
+        <h4 class="text-center train my-5 "><marquee>🖋️Learn Mca(Master of computer application)  <span href="">(Notes,) </span><span href="">(syllabus ) </span>,<span href="">(Video)</span>, <span href="">(previous year  questions paper)</span></marquee></h4>
+        <h3 href="Home.html" class="mt-2 tengent">⬅️</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/cccccc.png" class="d-block w-100 rounded" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="text-light">First slide label</h5>
+                          <p class="text-light">Learn our E-learning website</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/adbms.png" class="d-block w-100 rounded" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="text-light">Second slide label</h5>
+                          <p class="text-light">Learn our E-learning website</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/bigdata.png" class="d-block w-100 rounded" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="text-light">Third slide label</h5>
+                          <p class="text-light">Learn our E-learninng 
+                            website.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+
+
+                
+                
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        
+        <div class=" container mt-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="teacher-summary">
+                        <a href="c++.html"><img src="images/c++1.jpg" alt="Teacher 1"></a>
+                        <h3 class="mt-3 text-danger">C++</h3>
+                        <p class="mt-3 text-danger">C++ programming </p>
+                       
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                👉see here
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                              <li><button class="dropdown-item" type="button">👉Mca pdf/notes</button></li>
+                              <li><button class="dropdown-item" type="button">👉Previous year question paper</button></li>
+                              <li><button class="dropdown-item" type="button">👉Video</button></li>
+                              <li><button class="dropdown-item" type="button">👉Syllabus</button></li>
+
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="teacher-summary">
+                        <a href="Sepm.html"><img src="images/sepm1.png" alt="Teacher 2"></a>
+                        <h3>Sepm</h3>
+                        <p>softawre project management</p>
+                       
+                       
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                👉See here
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                              <li><button class="dropdown-item" type="button">👉Mca pdf/notes</button></li>
+                              <li><button class="dropdown-item" type="button">👉Previous year question paper</button></li>
+                              <li><button class="dropdown-item" type="button">👉Video</button></li>
+                              <li><button class="dropdown-item" type="button">👉Syllabus</button></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="teacher-summary">
+                      <a href="Math.html"><img src="images/math1.png" alt="Teacher 2"></a>
+                        <h3>Math</h3>
+                        <p>Discrete mathematics</p>
+                        
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                👉see here
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                              
+                              <li><button class="dropdown-item" type="button">👉Mca pdf/notes</button></li>
+                              <li><button class="dropdown-item" type="button">👉Previous year question paper</button></li>
+                              <li><button class="dropdown-item" type="button">👉Video</button></li>
+                              <li><button class="dropdown-item" type="button">👉Syllabus</button></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="teacher-summary">
+                        <a href="Adbms.html"><img src="images/adbms1.png" alt="Teacher 2"></a>
+                        <h3>Adbms</h3>
+                        <p>Adbms advance database</p>  
+
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                👉see here
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                              
+                              <li><button class="dropdown-item" type="button">👉Mca pdf/notes</button></li>
+                              <li><button class="dropdown-item" type="button">👉Previous year question paper</button></li>
+                              <li><button class="dropdown-item" type="button">👉Video</button></li>
+                              <li><button class="dropdown-item" type="button">👉Syllabus</button></li>
+                            </ul>
+                          </div>
+                    </div>
+
+                   
+                    
+                    
+                </div>
+               
+               
+                
+              
+                
+                </div>
+            </div>
+
+
+            <div class=" container mt-3">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="teacher-summary">
+                            <a href="focs.html"><img src="images/focs.png" alt="Teacher 1"></a>
+                            <h3>Focs</h3>
+                            <p>fundamental of computer science </p>
+                           
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                    👉See here
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                 
+                                  <li><button class="dropdown-item" type="button">👉Mca pdf/notes</button></li>
+                                  <li><button class="dropdown-item" type="button">👉Previous year question paper</button></li>
+                                  <li><button class="dropdown-item" type="button">👉Video</button></li>
+                                  <li><button class="dropdown-item" type="button">👉Syllabus</button></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="teacher-summary">
+                            <a href="artificial.html"><img src="images/ai1.jpg" alt="Teacher 2"></a>
+                            <h3>AI</h3>
+                            <p>Artificial intelligence</p>
+                           
+                           
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                    👉See here
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                  
+                                  <li><button class="dropdown-item" type="button">👉Mca pdf/notes</button></li>
+                                  <li><button class="dropdown-item" type="button">👉Previous year question paper</button></li>
+                                  <li><button class="dropdown-item" type="button">👉Video</button></li>
+                                  <li><button class="dropdown-item" type="button">👉Syllabus</button></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="teacher-summary">
+                            <a href="cn.html"><img src="images/cn1.jpg" alt="Teacher 2"></a>
+                            <h3>Computer network</h3>
+                            <p>computer networks tutorial</p>
+                            
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                    👉see here
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                  <li><button class="dropdown-item" type="button">👉Mca pdf/notes</button></li>
+                                  <li><button class="dropdown-item" type="button">👉Previous year question paper</button></li>
+                                  <li><button class="dropdown-item" type="button">👉Video</button></li>
+                                  <li><button class="dropdown-item" type="button">👉Syllabus</button></li>
+                                  
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="teacher-summary">
+                            <a href="Java.html"><img src="images/java1.jpg" alt="Teacher 2"></a>
+                            <h3>Java</h3>
+                            <p>Java programming language</p>  
+    
+    
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                    👉see here
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                 
+                                  <li><button class="dropdown-item" type="button">👉Mca pdf/notes</button></li>
+                                  <li><button class="dropdown-item" type="button">👉Previous year question paper</button></li>
+                                  <li><button class="dropdown-item" type="button">👉Video</button></li>
+                                  <li><button class="dropdown-item" type="button">👉Syllabus</button></li>
+                                </ul>
+                              </div>
+                        </div>
+    
+                       
+                        
+                        
+                    </div>
+                   
+                   
+                    
+                  
+                    
+                    </div>
+                </div>
+
+
+                <div class=" container mt-3">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="teacher-summary">
+                                <a href="Erp.html"><img src="images/erp1.png" alt="Teacher 1"></a>
+                                <h3>Erp</h3>
+                                <p>Enterprise resource and planning</p>
+                               
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                        👉see here
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                     
+                                      <li><button class="dropdown-item" type="button">👉Mca pdf/notes</button></li>
+                                      <li><button class="dropdown-item" type="button">👉Previous year question paper</button></li>
+                                      <li><button class="dropdown-item" type="button">👉Video</button></li>
+                                      <li><button class="dropdown-item" type="button">👉Syllabus</button></li>
+        
+                                    </ul>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="teacher-summary">
+                                <a href="os.html"><img src="images/os1.jpg" alt="Teacher 2"></a>
+                                <h3>Operating system</h3>
+                                <p>Linus/operating system</p>
+                               
+                               
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                        👉See here
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                      
+                                      <li><button class="dropdown-item" type="button">👉Mca pdf/notes</button></li>
+                                      <li><button class="dropdown-item" type="button">👉Previous year question paper</button></li>
+                                      <li><button class="dropdown-item" type="button">👉Video</button></li>
+                                      <li><button class="dropdown-item" type="button">👉Syllabus</button></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="teacher-summary">
+                                <a herf="nnf.html"><img src="images/nnf1.jpg" alt="Teacher 2"></a>
+                                <h3>Neural Network</h3>
+                                <p>Neural network and fuzzy logic</p>
+                                
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                        👉see here
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                      
+                                      <li><button class="dropdown-item" type="button">👉Mca pdf/notes</button></li>
+                                      <li><button class="dropdown-item" type="button">👉Previous year question paper</button></li>
+                                      <li><button class="dropdown-item" type="button">👉Video</button></li>
+                                      <li><button class="dropdown-item" type="button">👉Syllabus</button></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="teacher-summary">
+                                <a href="crypto.html"><img src="images/crypto1.jpg" alt="Teacher 2"></a>
+                                <h3>Cryptography and network</h3>
+                                <p>Cryptography network security</p>  
+        
+        
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                        👉see here
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                     
+                                      <li><button class="dropdown-item" type="button">👉Mca pdf/notes</button></li>
+                                      <li><button class="dropdown-item" type="button">👉Previous year question paper</button></li>
+                                      <li><button class="dropdown-item" type="button">👉Video</button></li>
+                                      <li><button class="dropdown-item" type="button">👉Syllabus</button></li>
+                                    </ul>
+                                  </div>
+                            </div>
+        
+                           
+                            
+                            
+                        </div>
+                       
+                       
+                        
+                      
+                        
+                        </div>
+                    </div>
+                    <div class=" container mt-3">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="teacher-summary">
+                                    <a href="cgraphics.html"><img src="images/computergraphics1.jpg" alt="Teacher 1"></a>
+                                    <h3>Computer Graphics</h3>
+                                    <p>Computer graphics  for learning </p>
+                                   
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                            👉See here
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                          
+                                          <li><button class="dropdown-item" type="button">👉Mca pdf/notes</button></li>
+                                          <li><button class="dropdown-item" type="button">👉Previous year question paper</button></li>
+                                          <li><button class="dropdown-item" type="button">👉Video</button></li>
+                                          <li><button class="dropdown-item" type="button">👉Syllabus</button></li>
+            
+                                        </ul>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="teacher-summary">
+                                    <a href="dscience.html"><img src="images/data1.jpg" alt="Teacher 2"></a>
+                                    <h3>Data science</h3>
+                                    <p>Data science the learning way</p>
+                                   
+                                   
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                            👉See here
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                          <li><button class="dropdown-item" type="button">👉Mca pdf/notes</button></li>
+                                          <li><button class="dropdown-item" type="button">👉Previous year question paper</button></li>
+                                          <li><button class="dropdown-item" type="button">👉Video</button></li>
+                                          <li><button class="dropdown-item" type="button">👉Syllabus</button></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="teacher-summary">
+                                    <a href="iot.html"><img src="images/internet1.png" alt="Teacher 2"></a>
+                                    <h3>Internet of things</h3>
+                                    <p>Internet the learning of way</p>
+                                    
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                            👉See here
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                        
+                                          <li><button class="dropdown-item" type="button">👉Mca pdf/notes</button></li>
+                                          <li><button class="dropdown-item" type="button">👉Previous year question paper</button></li>
+                                          <li><button class="dropdown-item" type="button">👉Video</button></li>
+                                          <li><button class="dropdown-item" type="button">👉Syllabus</button></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="teacher-summary">
+                                    <a href="cloud.html"><img src="images/cloud1.jpg" alt="Teacher 2"></a>
+                                    <h3>Cloud computing</h3>
+                                    <p>Cloud computing the learning way</p>  
+            
+            
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                            👉See here
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                         
+                                          <li><button class="dropdown-item" type="button">👉Mca pdf/notes</button></li>
+                                          <li><button class="dropdown-item" type="button">👉Previous year question paper</button></li>
+                                          <li><button class="dropdown-item" type="button">👉Video</button></li>
+                                          <li><button class="dropdown-item" type="button">👉Syllabus</button></li>
+                                        </ul>
+                                      </div>
+                                </div>
+            
+                               
+                                
+                                
+                            </div>
+                           
+                           
+                            
+                          
+                            
+                            </div>
+                        </div>
+                        <div class=" container mt-3">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    
+                                    
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="teacher-summary">
+                                        <a href="Bigdata.html"><img src="images/bigdata1.jpg" alt="Teacher 2"></a>
+                                        <h3>Bigdata</h3>
+                                        <p>Bigdata the learning way</p>
+                                       
+                                       
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                                👉See here
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                              <li><button class="dropdown-item" type="button">👉Mca pdf/notes</button></li>
+                                              <li><button class="dropdown-item" type="button">👉Previous year question paper</button></li>
+                                              <li><button class="dropdown-item" type="button">👉Video</button></li>
+                                              <li><button class="dropdown-item" type="button">👉Syllabus</button></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    
+                                  
+                                </div>
+                                <div class="col-md-3">
+                                    
+                                    
+                
+        
+                                </div>
+                               
+                               
+                                
+                              
+                                
+                                </div>
+                            </div>
+     
+                            <div class="container mt-5">
+                                <h3 class="text-center text-info">Our e-learning collaboration</h3>
+                                <div class="ratio ratio-16x9">
+                                    <video controls autoplay loop muted poster="images/artificial.png">
+                                        <source src="video/3209298-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>           
+                        
+                            
+
+
+
+
+
+
+<div class="container-fluid mt-3">
+    <footer class="bg-primary text-white text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h5 class="text-uppercase ">E-learning info</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#!" class="text-white text-center">Home</a></li>
+                        <li><a href="#!" class="text-white text-center">About Us</a></li>
+                        <li><a href="#!" class="text-white text-center">Contact</a></li>
+                        <li><a href="#!" class="text-white text-center">Gallery</a></li>
+                        <li><a href="#!" class="text-white text-center">Semester</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="text-uppercase ">Customer Service</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#!" class="text-white text-center">FAQ</a></li>
+                        <li><a href="#!" class="text-white text-center">Support</a></li>
+                        <li><a href="#!" class="text-white text-center">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="text-uppercase ">Social Media</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#!" class="text-white text-center">Facebook</a></li>
+                        <li><a href="#!" class="text-white text-center">Twitter</a></li>
+                        <li><a href="#!" class="text-white text-center">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; 2024 Your Company: <a class="text-white" href="https://yourwebsite.com/">yourwebsite.com</a>
+        </div>
+    </footer>
+     </div>
+
+                           
+                            
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
